@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BCM)
 
 # init list with pin numbers
 
-pinList = [2, 3, 4, 17, 27, 22, 10, 9]
+pinList = [0, 2, 3, 21, 22, 23, 24, 25]
 
 # loop through pins and set mode and state to 'low'
 
@@ -21,28 +21,28 @@ SleepTimeL = 2
 # main loop
 
 try:
-  GPIO.output(2, GPIO.LOW)
+  GPIO.output(0, GPIO.LOW)
   print "ONE"
   time.sleep(SleepTimeL); 
-  GPIO.output(3, GPIO.LOW)
+  GPIO.output(2, GPIO.LOW)
   print "TWO"
   time.sleep(SleepTimeL);  
-  GPIO.output(4, GPIO.LOW)
+  GPIO.output(3, GPIO.LOW)
   print "THREE"
   time.sleep(SleepTimeL);
-  GPIO.output(17, GPIO.LOW)
+  GPIO.output(21, GPIO.LOW)
   print "FOUR"
   time.sleep(SleepTimeL);
-  GPIO.output(27, GPIO.LOW)
+  GPIO.output(22, GPIO.LOW)
   print "FIVE"
   time.sleep(SleepTimeL);
-  GPIO.output(22, GPIO.LOW)
+  GPIO.output(23, GPIO.LOW)
   print "SIX"
   time.sleep(SleepTimeL);
-  GPIO.output(10, GPIO.LOW)
+  GPIO.output(24, GPIO.LOW)
   print "SEVEN"
   time.sleep(SleepTimeL);
-  GPIO.output(9, GPIO.LOW)
+  GPIO.output(25, GPIO.LOW)
   print "EIGHT"
   time.sleep(SleepTimeL);
   GPIO.cleanup()
